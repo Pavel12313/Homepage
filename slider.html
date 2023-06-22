@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PORTFOLIO</title>
+        <meta charset="UTF-8">
+        <link href="./css/slider.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(./img/laptop.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/laptop1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/israel.jpg)"></div>
+            </div>    
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper=new Swiper('.swiper',{
+                loop:true,
+                effect:'fade',
+                speed:2000,
+                autoplay:{
+                    delay:3000,
+                },
+                navigation:{
+                    nextEl:'.swiper-button-next',
+                    prevEl:'.swiper-button-prev',   
+                }
+            });  
+        </script>
+    </body>
+</html>        
